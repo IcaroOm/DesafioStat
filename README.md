@@ -72,7 +72,7 @@ Enviei meus resultados para o professor e fui informado de que a minha média es
 
 Comecei a tentar investigar o código; minha suspeita era de algum erro ou caractere não reconhecido na hora do parser, que estaria sendo adicionado como um número a partir de seu valor ASCII.
 
-Porém, eu estava levando em consideração apenas o . e o \n, sendo ambos os únicos elementos não numéricos que eu acreditava estarem no arquivo. Contudo, após pesquisar na internet sobre erros parecidos, vi que nem sempre a demarcação de quebra de linha é apenas \n; às vezes pode ser \r\n, que é o padrão do Windows.
+Eu estava levando em consideração apenas o . e o \n, sendo ambos os únicos elementos não numéricos que eu acreditava estarem no arquivo. Contudo, após pesquisar na internet sobre erros parecidos, vi que nem sempre a demarcação de quebra de linha é apenas \n; às vezes pode ser \r\n, que é o padrão do Windows.
 
 Após colocar uma condição no código para que, caso encontre esse caractere (\r), ele pule e siga para o próximo, vi que a média chegou ao valor exato.
 
